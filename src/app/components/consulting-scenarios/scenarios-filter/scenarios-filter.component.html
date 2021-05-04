@@ -1,32 +1,44 @@
-<mat-list class="container">
-  <div mat-subheader>Critères de filtre</div>
-  <mat-list-item>
-    <form>
-      <mat-form-field>
-        <mat-label>
-          <mat-icon matPrefix>search</mat-icon>
-        </mat-label>
-        <input matInput placeholder="Rechercher un scn" value="">
-        <!-- <mat-hint>Hint</mat-hint> -->
-      </mat-form-field>
-    </form>
-  </mat-list-item>
-  <mat-list-item *ngFor="let criterion of criteria">
-    <button mat-menu-item [matMenuTriggerFor]="criteriaSub" [matMenuTriggerData]="criterion">
-      <span matPrefix>{{criterion.nameCriteria}}</span>
-      <mat-icon>navigate_next</mat-icon>
-    </button>
-  </mat-list-item>
-  <mat-divider></mat-divider>
-  <div mat-subheader>Sous-critères de filtre</div>
-  <mat-list-item>
-    <button mat-button [matMenuTriggerFor]="criteriaSub">{{criteria[0].nameCriteria}}</button>
-  </mat-list-item>
+<cdk-virtual-scroll-viewport itemSize="20" class="viewport">
+  <!-- <div *cdkVirtualFor="let item of items" class="item">{{item}}</div> -->
+  <mat-list class="container">
+    <div mat-subheader>
+      <h2>Critères de filtre</h2>
+    </div>
+    <mat-list-item>
+      <form>
+        <mat-form-field>
+          <mat-label>
+            <mat-icon matPrefix>search</mat-icon>
+          </mat-label>
+          <input matInput placeholder="Rechercher un scn" value="">
+          <!-- <mat-hint>Hint</mat-hint> -->
+        </mat-form-field>
+      </form>
+    </mat-list-item>
+    <mat-list-item *cdkVirtualFor="let criterion of criteria">
+      <button mat-menu-item [matMenuTriggerFor]="criteriaSub" [matMenuTriggerData]="criterion">
+        <span matPrefix>{{criterion.nameCriteria}}</span>
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <div mat-subheader>
+      <h2>Sous-critères de filtre</h2>
+    </div>
+    <mat-list-item *ngFor="let criterion of criteria">
+      <button mat-menu-item [matMenuTriggerFor]="criteriaSub" [matMenuTriggerData]="criterion">
+        <span matPrefix>{{criterion.nameCriteria}}</span>
+        <mat-icon>navigate_next</mat-icon>
+      </button>
+    </mat-list-item>
 
-  <button mat-raised-button class="search" (click)="onSearch()">Rechercher</button>
 
 
-</mat-list>
+  </mat-list>
+</cdk-virtual-scroll-viewport>
+<button mat-raised-button class="search" (click)="onSearch()">Rechercher</button>
+
+
 
 <mat-menu #criteriaSub="matMenu" xPosition="before">
   <ng-template matMenuContent let-sousCriteria="sousCriteria">

@@ -2,6 +2,10 @@
   justify-content: space-between;
 }
 
+.space {
+  margin: 40px;
+}
+
 span {
   padding-right: 1rem; 
 }
@@ -9,8 +13,9 @@ span {
 .mat-toolbar {
   background: #f5f5f5;
   color: gray;
-   a {
-     text-decoration: none;
-     color: gray;
-   }
+  a {
+    text-decoration: none;
+    color: gray;
+  }
 }
+

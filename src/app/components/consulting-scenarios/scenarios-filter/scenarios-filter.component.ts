@@ -140,16 +140,23 @@ export class ScenariosFilterComponent implements OnInit {
   onSearch() {
     console.log('search');
     let selectCriteriaArr: Array<any> = [];
+    let selectCriteria: any = null;
 
-    this.criteria.forEach((c: any) => {
-      let selectCriteria = c.sousCriteria.filter(
-        (sousCrit: any) => sousCrit.completed
-      );
-
-      if (selectCriteria != null) {
-        selectCriteria.forEach((criteria: any) => {
-          if (criteria.name != 'Tout cocher') selectCriteriaArr.push(criteria);
-        });
+    this.criteria.forEach((crit: any) => {
+      selectCriteria = {
+        nameCriteria: '',
+        sousCriteria: [],
+      };
+      selectCriteria.nameCriteria = crit.nameCriteria;
+      crit.sousCriteria.forEach((sousCrit: any) => {
+        if (sousCrit.name != 'Tout cocher') {
+          if (sousCrit.completed) {
+            selectCriteria.sousCriteria.push(sousCrit);
+          }
+        }
+      });
+      if (selectCriteria.sousCriteria.length != 0) {
+        selectCriteriaArr.push(selectCriteria);
       }
     });
 

@@ -1,5 +1,5 @@
 .container {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 mat-list-item {
@@ -23,4 +23,15 @@ ul {
 .search {
   margin: 20px;
   padding-inline: 50px;
+}
+
+.viewport {
+  height: 800px;
+  width: 250px;
+  border: 0px solid black;
+  margin-left: 0px;
+}
+
+.item {
+  height: 20px;
 }

@@ -12,6 +12,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -56,6 +57,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatSidenavModule,
     MatCheckboxModule,
+    ScrollingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
