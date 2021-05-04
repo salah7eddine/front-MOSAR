@@ -11,7 +11,6 @@ export class ScenariosFilterComponent implements OnInit {
   criteria: any = [
     {
       nameCriteria: 'Driving Delegation',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L3', completed: false, color: 'primary' },
@@ -20,7 +19,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Driving Assist',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L5', completed: false, color: 'primary' },
@@ -29,7 +27,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Safety Assist',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L7', completed: false, color: 'primary' },
@@ -38,7 +35,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Parking Assist',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L9', completed: false, color: 'primary' },
@@ -47,7 +43,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Typologie de scénario',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L11', completed: false, color: 'primary' },
@@ -56,7 +51,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Rating',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L13', completed: false, color: 'primary' },
@@ -65,7 +59,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Géographie',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L15', completed: false, color: 'primary' },
@@ -74,7 +67,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Contexte routier',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L17', completed: false, color: 'primary' },
@@ -83,7 +75,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Type de scénario',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L19', completed: false, color: 'primary' },
@@ -92,7 +83,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Base de roulage',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L21', completed: false, color: 'primary' },
@@ -101,7 +91,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Type de véhicule',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L23', completed: false, color: 'primary' },
@@ -110,7 +99,6 @@ export class ScenariosFilterComponent implements OnInit {
     },
     {
       nameCriteria: 'Homologation ',
-      completed: false,
       sousCriteria: [
         { name: 'Tout cocher', completed: false, color: 'primary' },
         { name: 'AD L25', completed: false, color: 'primary' },
@@ -147,5 +135,24 @@ export class ScenariosFilterComponent implements OnInit {
     sousCriteria.forEach(
       (ssCriteria: any) => (ssCriteria.completed = completed)
     );
+  }
+
+  onSearch() {
+    console.log('search');
+    let selectCriteriaArr: Array<any> = [];
+
+    this.criteria.forEach((c: any) => {
+      let selectCriteria = c.sousCriteria.filter(
+        (sousCrit: any) => sousCrit.completed
+      );
+
+      if (selectCriteria != null) {
+        selectCriteria.forEach((criteria: any) => {
+          if (criteria.name != 'Tout cocher') selectCriteriaArr.push(criteria);
+        });
+      }
+    });
+
+    console.log(selectCriteriaArr);
   }
 }

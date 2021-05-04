@@ -23,7 +23,7 @@
     <button mat-button [matMenuTriggerFor]="criteriaSub">{{criteria[0].nameCriteria}}</button>
   </mat-list-item>
 
-  <button mat-raised-button class="search" location="center">Rechercher</button>
+  <button mat-raised-button class="search" (click)="onSearch()">Rechercher</button>
 
 
 </mat-list>
