@@ -1,17 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { MatMenuTrigger } from '@angular/material/menu';
-export interface Section {
-  name: string;
-  updated: Date;
-}
-
-export interface Task {
-  name: string;
-  completed: boolean;
-  color: ThemePalette;
-  subtasks?: Task[];
-}
 
 @Component({
   selector: 'app-scenarios-filter',
