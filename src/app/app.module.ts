@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,6 +25,7 @@ import { CreationComponent } from './components/creation/creation.component';
 import { AuditComponent } from './components/audit/audit.component';
 import { ResultsScenariosComponent } from './components/consulting-scenarios/results-scenarios/results-scenarios.component';
 import { ScenariosFilterComponent } from './components/consulting-scenarios/scenarios-filter/scenarios-filter.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { ScenariosFilterComponent } from './components/consulting-scenarios/scen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatSliderModule,
     MatToolbarModule,
     MatButtonModule,
@@ -51,6 +55,7 @@ import { ScenariosFilterComponent } from './components/consulting-scenarios/scen
     MatInputModule,
     MatIconModule,
     MatSidenavModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
