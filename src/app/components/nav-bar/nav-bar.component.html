@@ -1,11 +1,22 @@
 <mat-toolbar color="gray" class="navbar">
   <div class="space">
-    <span mat-flat-button><a routerLink="/consultation" routerLinkActive="router-link-active">Consultation</a></span>
-    <span mat-flat-button><a routerLink="/create">Création</a></span>
-    <span mat-flat-button><a routerLink="/management">Gestion</a></span>
-    <span mat-flat-button><a routerLink="/audit">Audit</a></span>
+    <span mat-flat-button><a routerLink="/consultation" routerLinkActive="router-link-active">{{ 'navbar.consultation' |
+        translate }}</a></span>
+    <span mat-flat-button><a routerLink="/create">{{ 'navbar.create' | translate }}</a></span>
+    <span mat-flat-button><a routerLink="/management">{{ 'navbar.management' | translate }}</a></span>
+    <span mat-flat-button><a routerLink="/audit">{{ 'navbar.audit' | translate }}</a></span>
   </div>
   <div class="space">
-    <p>Camille DEVERRIERE</p>
+    <!-- <span mat-flat-button><button (click)="useLanguage('en')">en</button>
+      <button (click)="useLanguage('fr')">fr</button></span> -->
+    <mat-form-field appearance="fill">
+      <mat-label>language</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let lang of langs" [value]="lang.value" (click)="useLanguage(lang.value)">
+          {{lang.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- <p>Camille DEVERRIERE</p> -->
   </div>
 </mat-toolbar>

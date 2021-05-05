@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "consultation": "Consultation",
+    "create": "Création",
+    "management": "Gestion",
+    "audit": "Audit",
+    "language": "Langue"
+  },
+  "sidebar": {
+    "filterCriteria": "Critères de filtre",
+    "filterSubCriteria": "Sous-critères de filtre",
+    "search": "Rechercher",
+    "searchFor": "Rechercher un"
+  }
+}

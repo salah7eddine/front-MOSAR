@@ -1,89 +1,456 @@
 {
-  "scenarios": [
-    {
-      "id": 1,
-      "name": "scenario  1 ",
-      "permissions": {
-        "CAN_REOPEN_FEEDBACK_SCENARIO": true,
-        "CAN_REOPEN_READY_SCENARIO": true,
-        "CAN_REOPEN_VALIDATED_SCENARIO": true,
-        "CAN_REQUEST_SCENARIO_FEEDBACK": true,
-        "CAN_REQUEST_SCENARIO_VALIDATION": true,
-        "CAN_VALIDATE_SCENARIO": true,
-        "CAN_VIEW_COLLECTIONS": true,
-        "CAN_VIEW_GROUPS": true,
-        "CAN_WRITE_ANNOTATIONS": true
-      },
-      "resources": [1, 2, 3, 4],
-      "totalResults": 500
+  "data": {
+    "permissions": {
+      "CAN_VIEW_GROUPS": true,
+      "CAN_VIEW_COLLECTIONS": true,
+      "CAN_READ_ANNOTATIONS": true
     },
-    {
-      "id": 2,
-      "name": "scenario  2 ",
-      "permissions": {
-        "CAN_REOPEN_FEEDBACK_SCENARIO": true,
-        "CAN_REOPEN_READY_SCENARIO": true,
-        "CAN_REOPEN_VALIDATED_SCENARIO": true,
-        "CAN_REQUEST_SCENARIO_FEEDBACK": true,
-        "CAN_REQUEST_SCENARIO_VALIDATION": true,
-        "CAN_VALIDATE_SCENARIO": true,
-        "CAN_VIEW_COLLECTIONS": true,
-        "CAN_VIEW_GROUPS": true,
-        "CAN_WRITE_ANNOTATIONS": true
+    "totalResults": 21,
+    "resources": [
+      {
+        "id": 192972,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "110_001",
+        "description": "B runs on lane n°2, A runs in wrong way on lane n°2.\nA and B carry on without steering or braking.\nFollowing impact, B is turned upside down and A points in the right way of traffic.\n\nTags:\n- TFE-06-10 \n- TFE-02-01\n- Fontal collision\n- Type of functional failures : Overall\n- View obstruction due to road alignment (curve)",
+        "image": "4639eb-a979a9dc-e59e-4421-9143-04c99cc161af_110_001.png",
+        "parent": 192971,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "c1b979-70cb588d-c9a2-4c00-8bb8-a86db3ea0acb_Capture.PNG"
+          },
+          {
+            "image": "125dcf-0c2672fb-bd83-464d-a3f2-a4ee701f68df_Capture.PNG"
+          },
+          {
+            "image": "09bd63-d215dcce-c442-4129-8c9f-61f45fbffd08_Capture.PNG"
+          }
+        ]
       },
-      "resources": [1, 2, 3, 4],
-      "totalResults": 500
-    },
-    {
-      "id": 3,
-      "name": "scenario  3 ",
-      "permissions": {
-        "CAN_REOPEN_FEEDBACK_SCENARIO": true,
-        "CAN_REOPEN_READY_SCENARIO": true,
-        "CAN_REOPEN_VALIDATED_SCENARIO": true,
-        "CAN_REQUEST_SCENARIO_FEEDBACK": true,
-        "CAN_REQUEST_SCENARIO_VALIDATION": true,
-        "CAN_VALIDATE_SCENARIO": true,
-        "CAN_VIEW_COLLECTIONS": true,
-        "CAN_VIEW_GROUPS": true,
-        "CAN_WRITE_ANNOTATIONS": true
+      {
+        "id": 192974,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "201_001",
+        "description": "A runs on lane n°1, overtaking another vehicle running on lane n°2.\n\nA overtakes, sets right indicator on. A begins sudden lane change from lane n°1 to the right, loses control then crosses sliding  lanes n°2 and n°3.\n\nA hits the grassy slope on the right of emergency lane\nA rolls over several times on the shoulder, ejecting one of its occupants in the process.\n\nA is lying on roof on the shoulder. One of A's occupants is also lying on the shoulder. \n\nTags:\n- Type of functional failures : Action\n- Loss of control\n- Inexperienced driver \n",
+        "image": "9ca67d-ed9823fe-b0ee-4952-875c-7ddce1c4edc3_201_001-00.png",
+        "parent": 192973,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "3cf93b-98ffe964-0db2-40e7-8805-a1f780b9428c_201_001-a.png"
+          },
+          {
+            "image": "1a7913-5ec31829-c3b2-489c-ae4f-530e6e8da504_201_001-b.png"
+          },
+          {
+            "image": "05b9e7-7b21881f-53f7-4e37-97ab-456922ba36c8_Capture.PNG"
+          },
+          {
+            "image": "4030c2-5f192632-1e44-4bda-b77f-4647428570bc_201_001-d.png"
+          }
+        ]
       },
-      "resources": [1, 2, 3, 4],
-      "totalResults": 500
-    },
-    {
-      "id": 4,
-      "name": "scenario  4 ",
-      "permissions": {
-        "CAN_REOPEN_FEEDBACK_SCENARIO": true,
-        "CAN_REOPEN_READY_SCENARIO": true,
-        "CAN_REOPEN_VALIDATED_SCENARIO": true,
-        "CAN_REQUEST_SCENARIO_FEEDBACK": true,
-        "CAN_REQUEST_SCENARIO_VALIDATION": true,
-        "CAN_VALIDATE_SCENARIO": true,
-        "CAN_VIEW_COLLECTIONS": true,
-        "CAN_VIEW_GROUPS": true,
-        "CAN_WRITE_ANNOTATIONS": true
+      {
+        "id": 192975,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "201_004",
+        "description": "A runs on lane n°1 and B running on lane n°2.\nA overtakes B, sets right indicator on.\nA begins lane change from lane n°1 to the right, loses control then crosses lane n°2 sliding.\nB steers left to avoid the collision with A and brakes\nA bounces off the guardrail on the right side of the road and slides towards central reservation.\nB steers right, adapting to A's new trajectory, and brakes.\nB crushes A against guardrail.\n\nTags:\n- Loss of control\n- Type of functional failures : Action\n- TFE-03-01",
+        "image": "b0b9fe-3b54ec77-abf0-4b68-87b2-9da4b7742ca7_201_004-0.png",
+        "parent": 192973,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "51b3d7-0460798e-2517-4ad5-ada3-15b30a9f4d0e_201_004-a.png"
+          },
+          {
+            "image": "734165-35c72dcc-56b4-4d15-9d04-5e8aeb4defc2_201_004-b.png"
+          },
+          {
+            "image": "7db3cf-891c7c51-9cfd-4308-b3b6-41cc10354464_Capture.PNG"
+          },
+          {
+            "image": "d8ed21-80d0dc6e-9db1-46f7-aa77-04d9e1f691f3_201_004-d.png"
+          },
+          {
+            "image": "de9b58-062e854f-9829-4314-b3ac-e38d48073e1f_201_004-e.png"
+          }
+        ]
       },
-      "resources": [1, 2, 3, 4],
-      "totalResults": 500
-    },
-    {
-      "id": 5,
-      "name": "scenario  5 ",
-      "permissions": {
-        "CAN_REOPEN_FEEDBACK_SCENARIO": true,
-        "CAN_REOPEN_READY_SCENARIO": true,
-        "CAN_REOPEN_VALIDATED_SCENARIO": true,
-        "CAN_REQUEST_SCENARIO_FEEDBACK": true,
-        "CAN_REQUEST_SCENARIO_VALIDATION": true,
-        "CAN_VALIDATE_SCENARIO": true,
-        "CAN_VIEW_COLLECTIONS": true,
-        "CAN_VIEW_GROUPS": true,
-        "CAN_WRITE_ANNOTATIONS": true
+      {
+        "id": 192977,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "507_001",
+        "description": "Accident involves a passenger car A. Due to the distraction driver A deviates from lane n°2 to grassy shoulder. In order to level out the vehicle A swerves to the left, losses control and hits the shoulder.\n\nType of functional failures : Execution\nLoss of control\nTFE-01-01",
+        "image": "5e84cf-a0c617c8-8491-4c3a-bbbf-f34d1963f5f0_5071SC.PNG",
+        "parent": 192976,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "44498d-fc6db662-a774-44b7-831a-a6e815d1fdbf_5071inf.PNG"
+          },
+          {
+            "image": "820d44-f2b634d3-1792-4fff-a793-e36683cbdea9_5071SI.PNG"
+          },
+          {
+            "image": "e70bb8-6b715f2e-545e-4291-9623-cf4132d25aa4_5071SC.PNG"
+          },
+          {
+            "image": "a26bd5-74a57dc3-cba7-4ac2-8f3f-6e4e5b46d621_5071SF.PNG"
+          }
+        ]
       },
-      "resources": [1, 2, 3, 4],
-      "totalResults": 500
-    }
-  ]
+      {
+        "id": 192979,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "802_001",
+        "description": "A runs on lane n°2, B walks on lane n°2 ahead of A.\nB totters on the right side of lane n°2, A carries on without seeing him.\nA brakes and drives towards the emergency lane.Collision with pedestrian\n\nTags:\n- TFE-06-07 Type of functional failures : Overall\n- TFE-06-10\n- Unlit pedestrian, without reflective clothing , alcoholic\n",
+        "image": "11f23b-99e7014f-75e5-46e7-86e8-dda849f68c53_802_001-0.png",
+        "parent": 192978,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "753b39-f79d043d-dbba-48c2-9951-ad11d0ed6b3d_802_001-a.png"
+          },
+          {
+            "image": "758162-3fd4b10d-2253-44d8-a360-d4633668a037_802_001-b.png"
+          },
+          {
+            "image": "367baf-7e3e7ebe-8e88-4ddc-99ea-a50a25d04f0b_802_001-c.png"
+          }
+        ]
+      },
+      {
+        "id": 1929711,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "804_001",
+        "description": "Accident involves a pedestrian Y and a passenger car A. \nA runs on lane n°3 ahead of A, Y is on lane n°1 ahead of A.\nY crosses the lanes n°1 and n°2 and moves towards lane n°3, and hits by the A. \nY is ejected on the emergency lane and A escapes.\n\n\nCollision with pedestrian\nTFE-06-07 \nType of functional failures : Overall\nTFE-06-10 \n",
+        "image": "631b94-53526d74-83e5-40f3-9525-4e1ce1f4a619_804.PNG",
+        "parent": 1929710,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "d90780-8f3df7f0-6725-420c-8382-21e9486cb5e3_SI8041.PNG"
+          },
+          {
+            "image": "65d890-d5d2e874-18d5-45a0-a94b-7be95b1531d2_804_11.PNG"
+          },
+          {
+            "image": "190ac0-db87ab17-0e62-466d-a3ca-1749ec07fad7_XXX.PNG"
+          }
+        ]
+      },
+      {
+        "id": 1929713,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "804_001",
+        "description": "Accident involves a pedestrian Y and a passenger car A. \nA runs on lane n°3 ahead of A, Y is on lane n°1 ahead of A.\nY crosses the lanes n°1 and n°2 and moves towards lane n°3, and hits by the A. \nY is ejected on the emergency lane and A escapes.\n\n\nCollision with pedestrian\nTFE-06-07 \nType of functional failures : Overall\nTFE-06-10 \n",
+        "image": "631b94-53526d74-83e5-40f3-9525-4e1ce1f4a619_804.PNG",
+        "parent": 1929712,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "d90780-8f3df7f0-6725-420c-8382-21e9486cb5e3_SI8041.PNG"
+          },
+          {
+            "image": "65d890-d5d2e874-18d5-45a0-a94b-7be95b1531d2_804_11.PNG"
+          },
+          {
+            "image": "190ac0-db87ab17-0e62-466d-a3ca-1749ec07fad7_XXX.PNG"
+          }
+        ]
+      },
+      {
+        "id": 1929715,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "860_001",
+        "description": "\nA runs on the lane n°3 (100 km/h). B is stopped on the shelter ahead of A. Y is descended of B and is behind B.\nA leaves the lane n°3 and moves toward shelter. \nA hits Y\nY is projected over the guardrail.\nA continues on the shelter/reserved lane\nA hits B.\nB is projected, \nit rolls onto its right side across the shelter.\n A is stopped on the shelter . \nY is lying on the shoulder.\nCollision with pedestrian\nTFE-06-07\nTFE-06-10\nType of functional failures : Action",
+        "image": "bc2ccf-ea718aeb-cb93-498f-a14a-396c29c3a74e_initscene860_001.PNG",
+        "parent": 1929714,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "0ca914-c5cc1ea7-286d-449b-abef-333352d54ef4_initscene860_001.PNG"
+          },
+          {
+            "image": "f9f892-5d85b4a0-2e77-4272-9307-1f77e721b626_collisionscene1_860_1.PNG"
+          },
+          {
+            "image": "1bdc29-833e977e-3387-4bf3-a433-9e26c56dd2d5_collisionscene2_860_001.PNG"
+          },
+          {
+            "image": "cc5f68-3f514183-785a-4d98-b66b-31cf880bf14f_scenefinal860_001.PNG"
+          }
+        ]
+      },
+      {
+        "id": 1929717,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "860_001",
+        "description": "\nA runs on the lane n°3 (100 km/h). B is stopped on the shelter ahead of A. Y is descended of B and is behind B.\nA leaves the lane n°3 and moves toward shelter. \nA hits Y\nY is projected over the guardrail.\nA continues on the shelter/reserved lane\nA hits B.\nB is projected, \nit rolls onto its right side across the shelter.\n A is stopped on the shelter . \nY is lying on the shoulder.\nCollision with pedestrian\nTFE-06-07\nTFE-06-10\nType of functional failures : Action",
+        "image": "bc2ccf-ea718aeb-cb93-498f-a14a-396c29c3a74e_initscene860_001.PNG",
+        "parent": 1929716,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "0ca914-c5cc1ea7-286d-449b-abef-333352d54ef4_initscene860_001.PNG"
+          },
+          {
+            "image": "f9f892-5d85b4a0-2e77-4272-9307-1f77e721b626_collisionscene1_860_1.PNG"
+          },
+          {
+            "image": "1bdc29-833e977e-3387-4bf3-a433-9e26c56dd2d5_collisionscene2_860_001.PNG"
+          },
+          {
+            "image": "cc5f68-3f514183-785a-4d98-b66b-31cf880bf14f_scenefinal860_001.PNG"
+          }
+        ]
+      },
+      {
+        "id": 1929720,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "899_001",
+        "description": "The accident involves 4 passenger cars  (A, B, C, D), a passenger car E (without occupant in the vehicle) and a pedestrian Y. \nDue to the heavy traffic A is stopped on lane n°1 near the left guardrail \nB runs on the lane n°1 (low speed due to the traffic) ahead A \nC runs on the lane n°1 (low speed due to the traffic) ahead B \nD runs on the lane n°3 (low speed due to the traffic) ahead C\nE breakdown and is stopped  in the tunnel on the emergency lane and near the shelter\nPedestrian Y (driver of the vehicle E) is on the emergency lane at the back of  his vehicle \n\nDriver A  accelerates brutally and hits B\nB is propelled forward and hits C\nA accelerates again and hits B\nA changes to the lane n°3 from the lane n°1 and hits D\nA overtakes D by the left first hits Y then E.\n\n\nCollision with pedestrian \nTunnel\nTFE-06-07\nTFE-01-01\nTFE-02-03\nTFE-02-06\nTFE-03-01\nType of functional failures : overall \nHeavy traffic",
+        "image": "5dfbdc-FUp_14864533647118006748_upload",
+        "parent": 1929718,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "1ac0fd-FUp_5986685673686807316_upload"
+          },
+          {
+            "image": "371e3f-FUp_7481013533077326036_upload"
+          },
+          {
+            "image": "60bb47-FUp_8674742149452845242_upload"
+          },
+          {
+            "image": "1c715d-FUp_9866722530414388376_upload"
+          },
+          {
+            "image": "89f4f4-FUp_1583840464508847593_upload"
+          },
+          {
+            "image": "29f2fc-FUp_11712230346734358439_upload"
+          },
+          {
+            "image": "9f46a4-FUp_12839858383699661160_upload"
+          },
+          {
+            "image": "0e75de-FUp_1321047584822349274_upload"
+          }
+        ]
+      },
+      {
+        "id": 1929719,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "899_003",
+        "description": "Accident involves a passenger car A, passenger car B (without occupant) and a pedestrian Y (driver of B).\nB is stopped on the emergency lane (vehicle breakdown) and Y is in front of th B.\n\nA runs on the lane n°3 , arriving at the tails of traffic jams, A moves to the emergency lane (without breaking) and hits  B, the B hits the pedestrian Y.\n\nCollision with pedestrian \nTFE-06-07\nTFE-03-01 \nTypes of functional failures : Detection, Decision\n\n",
+        "image": "89f696-FUp_1726190880053955150_upload",
+        "parent": 1929718,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "12d58f-FUp_6138915604040013534_upload"
+          },
+          {
+            "image": "e186e1-FUp_2429647963534685081_upload"
+          },
+          {
+            "image": "33335e-FUp_12369807124786317242_upload"
+          },
+          {
+            "image": "7750bd-309339c9-f361-46a1-a7c3-9e07c00bd758_8993SF.PNG"
+          }
+        ]
+      },
+      {
+        "id": 1929721,
+        "type": "LOGICAL",
+        "isSynchronized": true,
+        "name": "899_004",
+        "description": "Truck A runs in lane n°2 behind the vehicle B. The tractor-trailer moves towards the emergency lane when the truck arrives next to the vehicle B. \nPedestrian Y (driver vehicle  B) is on the emergency lane , in limit of lane n°2, using a jack to raise the vehicle B.\nPedestrian Z is looking at tools in the trunck. \nThe tractor hits vehicle B on the left rear and hits the pedestrian Y. The pedestrian Y is ejected forward.\nAs the consequence of the impact, the vehicle B hits pedestrian Z. \nVehicle B stopped on the emergency lane fter the bursting left tyre..\nPedestrian Y lying on the emergency lane ahead vehicle B.\nTruck A stopped on the emergency lane ahead pedestrian Y. Pedestrian Z behind the vehicle B.\n\n\n\nCollision with pedestrian\nTFE-06-07\nType of functional failure: detection \n",
+        "image": "392bfe-829a8b43-891e-44ea-9eda-c207dc1caf01_initial899_4.PNG",
+        "parent": 1929718,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": "74cca5-2ab92320-6761-44c0-844c-274113c14ddd_initial899_4.PNG"
+          },
+          {
+            "image": "b615fc-37e06ae3-d1b4-47cd-a14c-dd2f742bc089_collision899_4.PNG"
+          },
+          {
+            "image": "b077d8-673ea30b-a58f-415a-9d93-c8f8218cba7b_final899_4.PNG"
+          }
+        ]
+      },
+      {
+        "id": 192971,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 110",
+        "description": "A vehicle monving on forbidden road collides an OV coming in opposite direction",
+        "image": "f90c1b-0ee44e99-f89d-4d80-a8d2-0239c17c609c_110.png",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 192973,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 201",
+        "description": "Overtaking maneuvre : Loss of control in the end of the maneuver",
+        "image": "2ae4c7-2bb2c9bc-2755-4422-a4cd-4084fe12f4dc_201.png",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 192976,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 507",
+        "description": "Single vehicle accident. Vehicle leaves the carriageway to the right after having touched right shoulder. \n",
+        "image": "1c0d35-ddaa168b-2b36-4a43-bfc6-7c230b9d84cd_507.PNG",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 192978,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 802",
+        "description": "Pedestrian moving on the nearside of the road in the same direction of the vehicle.",
+        "image": "5e953f-9aa14451-fe7d-4071-82a7-dc20223affa5_802.png",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 1929710,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 804",
+        "description": "Pedestrian crosses the road from the left to right",
+        "image": "f54c51-9fbac439-5d39-461a-9226-3ebd2f681d1b_804.PNG",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 1929712,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 804",
+        "description": "Pedestrian crosses the road from the left to right",
+        "image": "f54c51-9fbac439-5d39-461a-9226-3ebd2f681d1b_804.PNG",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 1929714,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 860",
+        "description": "\nMode change: Pedestrian getting out of his vehicle or going back in his vehicle",
+        "image": "4d3d80-d2eea040-d803-4745-aa94-33cd4ed8499a_860.PNG",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 1929716,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 860",
+        "description": "\nMode change: Pedestrian getting out of his vehicle or going back in his vehicle",
+        "image": "4d3d80-d2eea040-d803-4745-aa94-33cd4ed8499a_860.PNG",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      },
+      {
+        "id": 1929718,
+        "type": "FUNCTIONAL",
+        "isSynchronized": true,
+        "name": "Picto 899",
+        "description": "Other configurations involving a pedestrian",
+        "image": "c9b7c7-FUp_12229034639242970392_upload",
+        "parent": 0,
+        "origin": "ACCIDENTOLOGY",
+        "stateValidation": "DRAFT",
+        "steps": [
+          {
+            "image": ""
+          }
+        ]
+      }
+    ]
+  }
 }

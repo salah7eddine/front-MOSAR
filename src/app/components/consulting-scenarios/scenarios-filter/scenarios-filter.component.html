@@ -2,7 +2,7 @@
   <!-- <div *cdkVirtualFor="let item of items" class="item">{{item}}</div> -->
   <mat-list class="container">
     <div mat-subheader>
-      <h2>Critères de filtre</h2>
+      <h2>{{ 'sidebar.filterCriteria' | translate }}</h2>
     </div>
     <mat-list-item>
       <form>
@@ -10,7 +10,7 @@
           <mat-label>
             <mat-icon matPrefix>search</mat-icon>
           </mat-label>
-          <input matInput placeholder="Rechercher un scn" value="">
+          <input matInput placeholder=" {{ 'sidebar.searchFor' | translate }}  scn" value="">
           <!-- <mat-hint>Hint</mat-hint> -->
         </mat-form-field>
       </form>
@@ -23,7 +23,7 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <div mat-subheader>
-      <h2>Sous-critères de filtre</h2>
+      <h2>{{ 'sidebar.filterSubCriteria' | translate }}</h2>
     </div>
     <mat-list-item *ngFor="let criterion of criteria">
       <button mat-menu-item [matMenuTriggerFor]="criteriaSub" [matMenuTriggerData]="criterion">
@@ -36,7 +36,7 @@
 
   </mat-list>
 </cdk-virtual-scroll-viewport>
-<button mat-raised-button class="search" (click)="onSearch()">Rechercher</button>
+<button mat-raised-button class="search" (click)="onSearch()">{{ 'sidebar.search' | translate }}</button>
 
 
 
